@@ -1,6 +1,6 @@
 <?php
 // Allowed domain
-$allowedDomain = "amit-1.allinonereborn.in";
+$allowedDomain = "8088y.site";
 
 // Get Referer and Origin headers
 $referer = isset($_SERVER['HTTP_REFERER']) ? parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) : '';
@@ -8,7 +8,7 @@ $origin = isset($_SERVER['HTTP_ORIGIN']) ? parse_url($_SERVER['HTTP_ORIGIN'], PH
 
 // Check if the request is coming from the allowed domain
 if ($referer !== $allowedDomain && $origin !== $allowedDomain) {
-    header("Location: https://t.me/allinone_reborn");
+    header("Location: https://t.me/The8088yyy");
     exit();
 }
 
