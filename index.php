@@ -1,16 +1,12 @@
 <?php
 // Allowed domain
-$allowedDomain = "8088y.site";
+$allowedDomain = "";
 
 // Get Referer and Origin headers
 $referer = isset($_SERVER['HTTP_REFERER']) ? parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) : '';
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? parse_url($_SERVER['HTTP_ORIGIN'], PHP_URL_HOST) : '';
 
-// Check if the request is coming from the allowed domain
-if ($referer !== $allowedDomain && $origin !== $allowedDomain) {
-    header("Location: https://t.me/The8088yyy");
-    exit();
-}
+
 
 // Prevent embedding in other websites
 header("X-Frame-Options: SAMEORIGIN");
